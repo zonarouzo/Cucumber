@@ -86,6 +86,35 @@ Claude は関連資料を確認し、不明点があれば質問してから書�
 
 ---
 
+## Mac のフォルダで使うコマンド
+
+ターミナルに丸ごとコピーして貼り付け、Enter で実行します。
+（Claude Code の入力欄なら、先頭に `! ` を付けて貼り付けても実行できます）
+
+### フォルダの内容を最新の main にする
+
+GitHub でマージした PR や、ブラウザで登録した完成原稿をこのフォルダに取り込みます。
+
+```sh
+cd ~/Project/Novel/Cucumber && git switch main && git pull --ff-only origin main
+```
+
+- 保存していない変更があると止まることがあります。その場合は先に下の「プルリク」を行ってください。
+
+### フォルダの変更をプルリクする
+
+このフォルダで変更したファイルをすべて新しいブランチに保存し、PR を作ります。
+最後にブラウザが開くので、タイトルと説明を書いて **「Create pull request」** を押してください。
+
+```sh
+cd ~/Project/Novel/Cucumber && if [ -z "$(git status --porcelain)" ]; then echo "変更がありません"; else git status --short && b="update/$(date +%Y%m%d-%H%M%S)" && git switch -c "$b" && git add -A && git commit -m "フォルダの変更を反映" && git push -u origin "$b" && gh pr create --base main --web && git switch main; fi
+```
+
+- 実行前に、上の「最新の main にする」を済ませておくと安全です。
+- PR を作ったあと、フォルダは main に戻ります。マージ後に「最新の main にする」を実行すると変更が反映されます。
+
+---
+
 ## 注意
 
 - 完成原稿は Claude が勝手に変更しません。直してほしいときは明確に依頼してください（その場合も PR で提案されます）。
