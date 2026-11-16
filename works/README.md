@@ -9,6 +9,6 @@
 
 各話の進み具合は、フォルダ内のファイルで判断します（一覧表は作りません）。
 
-- `plots/epNNN_plot.md` … プロット
-- `drafts/epNNN_draft.md` … 第一稿（Claude）
-- `final/epNNN_final.md` … 完成原稿（あなた）。**中身が空のファイルは「未投稿」扱い**です。
+- `plots/epNNN_plot.txt` … プロット
+- `drafts/epNNN_draft.txt` … 第一稿（Claude）
+- `final/epNNN_final.txt` … 完成原稿（あなた）。**中身が空のファイルは「未投稿」扱い**です。
