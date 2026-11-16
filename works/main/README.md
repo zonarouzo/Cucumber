@@ -13,6 +13,7 @@
 <!-- この作品の執筆時にClaudeが読むべき設定ファイルを列挙します。 -->
 
 - `settings/story-analysis.md`（物語内容の整理。事実と認識の区別）
+- `settings/hidden-lore.md`（読者には明言しない裏設定）
 
 ## この作品で注意すること
 
