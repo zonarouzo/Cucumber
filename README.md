@@ -11,13 +11,14 @@ Claude Code が第一稿を書き、あなたが推敲して完成原稿にし�
 ```
 works/                 作品
   README.md            作品一覧
-  main/                本編
+  main/                本編『きゅうりの国』
     README.md          作品カード（視点・文体など）
     plots/             プロット      ep001_plot.md
     drafts/            第一稿        ep001_draft.md   ← Claudeが書く
     final/             完成原稿      ep001_final.md   ← あなたが置く
     settings/          本編だけの設定
-  spinoffs/            スピンオフ（作品ごとにフォルダを作る）
+  spinoffs/            スピンオフ
+    so01-naritai/      『きゅうりになりたい』（中身は main と同じ構成）
 settings/              全作品共通の設定（キャラ・世界観・用語など）
 templates/             テンプレート
 docs/workflow.md       Claude向けの詳しい作業手順
@@ -39,7 +40,7 @@ Claude Code に次のように伝えてください。
 （ここにプロット）
 ```
 
-スピンオフなら「スピンオフ so01 の第1話」のように指定します。
+スピンオフなら「きゅうりになりたい 第31話」のように指定します。
 Claude は関連資料を確認し、不明点があれば質問してから書きます。
 書き終わると **PR（変更の提案）** を作って URL を知らせます。
 
@@ -56,13 +57,22 @@ Claude は関連資料を確認し、不明点があれば質問してから書�
 
 ## 完成原稿を登録するとき（ブラウザだけでできます）
 
-1. GitHub でこのリポジトリを開き、`works` → `main` → `final` へ進む。
-2. 右上の **「Add file」→「Create new file」**。
-3. ファイル名に `ep003_final.md` のように入力。
-4. 本文を貼り付ける（1行目は `# 第3話 タイトル`）。
-5. **「Commit changes...」** を押し、「Commit directly to the main branch」のまま確定。
+各話の完成原稿用に、**空のファイル**を用意してあります。
 
-すでにある完成原稿を直すときは、ファイルを開いて右上の鉛筆アイコンで編集し、同じように確定します。
+| 作品 | 場所 |
+|---|---|
+| 本編『きゅうりの国』 | `works/main/final/ep001_final.md` |
+| スピンオフ『きゅうりになりたい』 | `works/spinoffs/so01-naritai/final/ep001_final.md` 〜 `ep030_final.md` |
+
+1. GitHub で上の場所から、該当する話のファイルを開く。
+2. 右上の **鉛筆アイコン（Edit this file）** を押す。
+3. 本文を貼り付ける（1行目は `# 第3話 タイトル`）。
+4. **「Commit changes...」** を押し、「Commit directly to the main branch」のまま確定。
+
+中身が空のファイルは「まだ投稿していない話」として扱われます。
+すでに登録した原稿を直すときも同じ手順です。
+
+31話以降を追加するときは、`final` フォルダで **「Add file」→「Create new file」** を押し、`ep031_final.md` のように名前を付けて同じように確定します（Claude に「31話の空ファイルを追加して」と頼んでもOKです）。
 
 > 第一稿のファイル（`drafts/`）を開いて「Copy raw file」でコピーし、推敲してから上の手順で登録すると楽です。
 
