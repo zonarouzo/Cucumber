@@ -21,9 +21,9 @@ Web小説の原稿・設定・プロットを管理するリポジトリ。Claud
 |---|---|
 | `works/README.md` | 作品一覧（本編・スピンオフのID、時系列上の位置） |
 | `works/<作品>/README.md` | 作品カード（視点・文体・参照すべき設定） |
-| `works/<作品>/plots/` | プロット `ep001_plot.md` |
-| `works/<作品>/drafts/` | 第一稿 `ep001_draft.md`（Claudeが書く） |
-| `works/<作品>/final/` | 完成原稿 `ep001_final.md`（ユーザーが管理。空ファイル＝未投稿） |
+| `works/<作品>/plots/` | プロット `ep001_plot.txt` |
+| `works/<作品>/drafts/` | 第一稿 `ep001_draft.txt`（Claudeが書く） |
+| `works/<作品>/final/` | 完成原稿 `ep001_final.txt`（ユーザーが管理。空ファイル＝未投稿） |
 | `works/<作品>/settings/` | その作品だけの設定 |
 | `settings/` | 全作品共通の設定。一覧は `settings/README.md` |
 | `templates/` | 各種テンプレート |

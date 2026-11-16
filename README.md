@@ -13,9 +13,9 @@ works/                 作品
   README.md            作品一覧
   main/                本編『きゅうりの国』
     README.md          作品カード（視点・文体など）
-    plots/             プロット      ep001_plot.md
-    drafts/            第一稿        ep001_draft.md   ← Claudeが書く
-    final/             完成原稿      ep001_final.md   ← あなたが置く
+    plots/             プロット      ep001_plot.txt
+    drafts/            第一稿        ep001_draft.txt   ← Claudeが書く
+    final/             完成原稿      ep001_final.txt   ← あなたが置く
     settings/          本編だけの設定
   spinoffs/            スピンオフ
     so01-naritai/      『きゅうりになりたい』（中身は main と同じ構成）
@@ -61,18 +61,18 @@ Claude は関連資料を確認し、不明点があれば質問してから書�
 
 | 作品 | 場所 |
 |---|---|
-| 本編『きゅうりの国』 | `works/main/final/ep001_final.md` |
-| スピンオフ『きゅうりになりたい』 | `works/spinoffs/so01-naritai/final/ep001_final.md` 〜 `ep030_final.md` |
+| 本編『きゅうりの国』 | `works/main/final/ep001_final.txt` |
+| スピンオフ『きゅうりになりたい』 | `works/spinoffs/so01-naritai/final/ep001_final.txt` 〜 `ep030_final.txt` |
 
 1. GitHub で上の場所から、該当する話のファイルを開く。
 2. 右上の **鉛筆アイコン（Edit this file）** を押す。
-3. 本文を貼り付ける（1行目は `# 第3話 タイトル`）。
+3. 本文を貼り付ける（1行目は `第3話 タイトル`）。
 4. **「Commit changes...」** を押し、「Commit directly to the main branch」のまま確定。
 
 中身が空のファイルは「まだ投稿していない話」として扱われます。
 すでに登録した原稿を直すときも同じ手順です。
 
-31話以降を追加するときは、`final` フォルダで **「Add file」→「Create new file」** を押し、`ep031_final.md` のように名前を付けて同じように確定します（Claude に「31話の空ファイルを追加して」と頼んでもOKです）。
+31話以降を追加するときは、`final` フォルダで **「Add file」→「Create new file」** を押し、`ep031_final.txt` のように名前を付けて同じように確定します（Claude に「31話の空ファイルを追加して」と頼んでもOKです）。
 
 > 第一稿のファイル（`drafts/`）を開いて「Copy raw file」でコピーし、推敲してから上の手順で登録すると楽です。
 
